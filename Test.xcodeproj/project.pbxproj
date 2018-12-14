@@ -14,6 +14,8 @@
 		DD4281FC21C391B4005DC272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4281FA21C391B4005DC272 /* LaunchScreen.storyboard */; };
 		DD42820721C391B4005DC272 /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD42820621C391B4005DC272 /* TestTests.swift */; };
 		DD42821221C391B4005DC272 /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD42821121C391B4005DC272 /* TestUITests.swift */; };
+		DD42822021C392B3005DC272 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD42821F21C392B3005DC272 /* NumberViewModel.swift */; };
+		DD42822221C393B1005DC272 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD42822121C393B1005DC272 /* NumberCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DD42820D21C391B4005DC272 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD42821121C391B4005DC272 /* TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITests.swift; sourceTree = "<group>"; };
 		DD42821321C391B4005DC272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD42821F21C392B3005DC272 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
+		DD42822121C393B1005DC272 /* NumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				DD4281F121C391B2005DC272 /* AppDelegate.swift */,
-				DD4281F321C391B2005DC272 /* ViewController.swift */,
+				DD42822521C39428005DC272 /* Controller */,
+				DD42822421C39424005DC272 /* View */,
+				DD42822321C3941D005DC272 /* ViewModel */,
 				DD4281F521C391B3005DC272 /* Main.storyboard */,
 				DD4281F821C391B4005DC272 /* Assets.xcassets */,
 				DD4281FA21C391B4005DC272 /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				DD42821321C391B4005DC272 /* Info.plist */,
 			);
 			path = TestUITests;
+			sourceTree = "<group>";
+		};
+		DD42822321C3941D005DC272 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD42821F21C392B3005DC272 /* NumberViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD42822421C39424005DC272 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD42822121C393B1005DC272 /* NumberCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD42822521C39428005DC272 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD4281F321C391B2005DC272 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD42822221C393B1005DC272 /* NumberCell.swift in Sources */,
 				DD4281F421C391B2005DC272 /* ViewController.swift in Sources */,
+				DD42822021C392B3005DC272 /* NumberViewModel.swift in Sources */,
 				DD4281F221C391B2005DC272 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
